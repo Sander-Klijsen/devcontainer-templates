@@ -16,7 +16,7 @@ For data engineering / PySpark projects. Includes a Spark Connect server on port
 
 1. `Ctrl+Shift+P` → **Dev Containers: Add Dev Container Configuration Files**
 2. Select **Show All Definitions...**
-3. Filter by your registry: `ghcr.io/YOUR_USERNAME`
+3. Filter by your registry: `ghcr.io/Sander-Klijsen`
 4. Pick a template — it copies `.devcontainer/` into your project
 
 ## Publishing
@@ -28,4 +28,4 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-Templates are published to `ghcr.io/YOUR_USERNAME/devcontainer-templates/python-base` and `ghcr.io/YOUR_USERNAME/devcontainer-templates/python-spark`.
+Templates are published to `ghcr.io/Sander-Klijsen/devcontainer-templates/python-base` and `ghcr.io/Sander-Klijsen/devcontainer-templates/python-spark`.

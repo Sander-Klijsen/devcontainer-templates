@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "Python Base",
   "description": "Python 3.12 + uv + zsh + starship + Claude CLI. Barebones starting point for Python projects.",
-  "documentationURL": "https://github.com/YOUR_USERNAME/devcontainer-templates",
-  "licenseURL": "https://github.com/YOUR_USERNAME/devcontainer-templates/blob/main/LICENSE",
+  "documentationURL": "https://github.com/Sander-Klijsen/devcontainer-templates",
+  "licenseURL": "https://github.com/Sander-Klijsen/devcontainer-templates/blob/main/LICENSE",
   "keywords": ["python", "uv", "zsh", "starship", "claude"]
 }
