@@ -1,0 +1,67 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+scan_timeout    = 500
+command_timeout = 500
+add_newline     = true
+
+format = """
+[░▒▓](#e0af68)\
+$username\
+[](fg:#e0af68 bg:#1f2a4a)\
+$directory\
+[](fg:#1f2a4a bg:#2d5a9e)\
+$git_branch\
+$git_status\
+[](fg:#2d5a9e bg:#0d7377)\
+$python\
+[ ](fg:#0d7377)\
+\n$character"""
+
+[username]
+show_always = true
+style_user  = "fg:#1a1b26 bg:#e0af68"
+style_root  = "fg:#1a1b26 bg:#e0af68"
+format      = '[ $user ]($style)'
+
+[directory]
+style             = "fg:#7dcfff bg:#1f2a4a"
+format            = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"/workspace" = "󰉋 workspace"
+
+[git_branch]
+symbol = ""
+style  = "fg:#c0caf5 bg:#2d5a9e"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style             = "fg:#e0af68 bg:#2d5a9e"
+format            = '[$all_status$ahead_behind ]($style)'
+ignore_submodules = true
+
+[python]
+symbol = "🐍 "
+style  = "fg:#c0caf5 bg:#0d7377"
+format = '[ $symbol($virtualenv) ]($style)'
+
+[character]
+success_symbol = "[❯](bold #7aa2f7)"
+error_symbol   = "[❯](bold #f7768e)"
+
+[docker_context]
+disabled = true
+[aws]
+disabled = true
+[azure]
+disabled = true
+[nodejs]
+disabled = true
+[java]
+disabled = true
+[rust]
+disabled = true
+[golang]
+disabled = true

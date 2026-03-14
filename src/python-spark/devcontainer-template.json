@@ -1,0 +1,9 @@
+{
+  "id": "python-spark",
+  "version": "1.0.0",
+  "name": "Python Spark",
+  "description": "Ubuntu 22.04 + Python 3.11 + Spark 3.5 + Delta Lake + uv + zsh + starship + Claude CLI. For data engineering projects.",
+  "documentationURL": "https://github.com/YOUR_USERNAME/devcontainer-templates",
+  "licenseURL": "https://github.com/YOUR_USERNAME/devcontainer-templates/blob/main/LICENSE",
+  "keywords": ["python", "spark", "delta", "pyspark", "data-engineering", "uv", "zsh", "claude"]
+}
