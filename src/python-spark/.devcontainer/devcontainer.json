@@ -3,8 +3,8 @@
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "USER_ID": "${localEnv:USER_ID:-1000}",
-      "GROUP_ID": "${localEnv:GROUP_ID:-1000}"
+      "USER_ID": "1000",
+      "GROUP_ID": "1000"
     }
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
