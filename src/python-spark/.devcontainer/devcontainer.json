@@ -19,7 +19,7 @@
     "15002": { "label": "Spark Connect", "onAutoForward": "silent" },
     "4040": { "label": "Spark UI", "onAutoForward": "notify" }
   },
-  "postStartCommand": "[ -f pyproject.toml ] && uv sync || true",
+  "postStartCommand": "([ -f pyproject.toml ] && uv sync || true) && /opt/spark/sbin/start-connect-server.sh",
   "remoteEnv": {
     "LOCAL_USER_ID": "${localEnv:USER_ID}",
     "UV_LINK_MODE": "copy",

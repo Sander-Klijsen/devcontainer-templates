@@ -6,12 +6,12 @@ Python + Apache Spark dev container for data engineering projects.
 
 | Tool | Version | Notes |
 |------|---------|-------|
-| Ubuntu | 22.04 | base image |
-| Python | 3.11 | required by Spark 3.5 runtime |
-| Apache Spark | 3.5.0 | with Hadoop 3 |
-| Delta Lake | 3.1.0 | `delta-spark` package |
+| Ubuntu | 24.04 | base image |
+| Python | 3.14 | via deadsnakes PPA |
+| Apache Spark | 4.1.1 | with Hadoop 3 |
+| Delta Lake | 4.1.0 | `delta-spark` package |
 | Java | 17 (OpenJDK) | required by Spark |
-| uv | 0.9.30 | fast Python package manager |
+| uv | 0.10.10 | fast Python package manager |
 | zsh | latest | default shell |
 | starship | latest | shell prompt |
 | zsh-autosuggestions | latest | grey suggestions as you type |
@@ -114,6 +114,6 @@ uv run pytest            # run tests
 
 ## Notes
 
-- Python is pinned to **3.11** because Spark 3.5 targets the Azure Synapse 3.4 runtime which constrains Python to 3.10/3.11.
 - Delta Lake jars are pre-configured in `/opt/spark/conf/spark-defaults.conf` — no extra config needed.
+- Spark 4.1 uses Scala 2.13, so Delta Lake artifact naming changed to `delta-spark_4.1_2.13`.
 - `uv sync` runs automatically on container start if a `pyproject.toml` is present.
